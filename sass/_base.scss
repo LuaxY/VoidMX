@@ -1,0 +1,62 @@
+* {
+    color: $text-color;
+    font-family: $text-font;
+    box-sizing: border-box;
+}
+
+body {
+    background: {
+        image: image-url("background.jpg");
+        repeat: no-repeat;
+        position: center center;
+        attachment: fixed;
+    }
+    @include background-size(cover);
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, .subtitle, .contact {
+    font-family: $text-font;
+}
+
+#logo {
+    width: 180px;
+    margin: 300px auto 20px auto;
+    padding: 10px;
+    border: 5px solid #fff;
+    @include border-radius(3px);
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        @include text-shadow(rgba(black, 0.4) 0 0 10px);
+    }
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.contact {
+    display: block;
+    font-size: 15px;
+
+    a:hover {
+        color: #abf7f9;
+    }
+}
+
+.subtitle, .contact {
+    @include text-shadow(rgba(black, 0.5) 0 0 5px);
+}
