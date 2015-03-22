@@ -45,7 +45,7 @@ h1, .subtitle, .contact {
 .subtitle {
     display: block;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .contact {
@@ -53,10 +53,10 @@ h1, .subtitle, .contact {
     font-size: 15px;
 
     a:hover {
-        color: #abf7f9;
+        color: #3befff;
     }
 }
 
 .subtitle, .contact {
-    @include text-shadow(rgba(black, 0.5) 0 0 5px);
+    @include text-shadow(rgba(black, 0.8) 0 0 5px);
 }
